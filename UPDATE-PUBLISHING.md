@@ -1,6 +1,6 @@
 # GitHub Releases 업데이트 배포
 
-1. 공개 GitHub 저장소는 https://github.com/Hyeophap/Hangul-Garden 입니다.
+1. 공개 GitHub 저장소는 https://github.com/hyeophap-del/Hangul-Garden 입니다.
 2. `native/Updates.cs`의 `DefaultRepository`를 `소유자/저장소`로 지정한 후 빌드하면 사용자에게 기본 주소가 제공됩니다. 이미 받은 앱에서도 PC 창에서 주소를 저장할 수 있습니다.
 3. 버전을 올릴 때 `native/Program.cs`의 어셈블리 버전·표시 버전과 `build-vr.ps1`의 EXE 파일명을 함께 변경합니다. 같은 버전 번호로는 업데이트 알림이 뜨지 않습니다.
 4. 빌드, 패키징, 서명 파일 생성을 수행합니다.
@@ -9,7 +9,7 @@
 .\build-vr.ps1 -IncludeDevTools
 # 현재 예시는 1.1입니다. 다음 배포에서는 새 번호로 변경하세요.
 .\package-release.ps1 -Version 1.1
-.\publish-update.ps1 -Repository 'Hyeophap/Hangul-Garden' -Version 1.1 -Tag v1.1 -Notes '변경 내용'
+.\publish-update.ps1 -Repository 'hyeophap-del/Hangul-Garden' -Version 1.1 -Tag v1.1 -Notes '변경 내용'
 ```
 
 5. GitHub의 공개 정식 Release(v1.1 등)에 `update-publish/<버전>` 폴더의 세 파일을 첨부하고 Latest로 지정합니다.

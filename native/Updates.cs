@@ -21,7 +21,7 @@ namespace HangeulVR {
     [DataMember]public string Notes;
 }
 public static class Updates {
-    public const string DefaultRepository="Hyeophap/Hangul-Garden";
+    public const string DefaultRepository="hyeophap-del/Hangul-Garden";
     public static Version Current {get{return Assembly.GetExecutingAssembly().GetName().Version;}}
     public const long MaxPackage=128L*1024*1024;
     internal static string NewerInstalled(string root,Version current,bool allowEqual=false){
