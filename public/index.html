@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>한글뜰 · VR 한글 채팅</title><link rel="stylesheet" href="/style.css"></head>
+<body><main>
+<header><div><span class="eyebrow">VR CHAT COMPANION</span><h1>한글뜰 <span>말 대신, 한글 한 줄.</span></h1></div><button id="fullscreen" class="subtle">화면 크게</button></header>
+<section class="composer" aria-label="채팅 작성"><div class="topline"><span>보낼 메시지</span><span id="count">0 / 144</span></div><div id="message" role="textbox" aria-readonly="true" aria-label="작성한 메시지" tabindex="0"></div><div class="compose-bottom"><span id="status" role="status" aria-live="polite">로컬 서버 연결 중…</span><button id="send" class="primary">보내기 ↗</button></div></section>
+<nav class="toolbar" aria-label="키보드 설정"><div class="modes"><button data-mode="ko" class="active" aria-pressed="true">한글</button><button data-mode="en" aria-pressed="false">ABC</button><button data-mode="symbols" aria-pressed="false">123 #</button></div><div><button id="undo">되돌리기</button><button id="clear" class="subtle">모두 지우기</button></div></nav>
+<section id="keyboard" aria-label="화면 키보드"></section>
+<section class="phrases"><div class="section-title"><h2>자주 쓰는 말</h2><button id="save" class="subtle">현재 문장 저장 ＋</button></div><div id="phrases"></div><p class="hint">문장을 누르면 작성창에 추가돼요. 내용을 확인한 뒤 보내기를 눌러 주세요.</p></section>
+<footer><label><input type="checkbox" id="sound"> 채팅 알림음</label><label><input type="checkbox" id="clearAfter" checked> 전송 후 비우기</label><span id="connection">로컬 연결 대기</span></footer>
+<details><summary>처음 사용하시나요? · 연결 방법</summary><ol><li>VRChat의 액션 메뉴에서 <strong>OSC → Enabled</strong>를 켜 주세요.</li><li>VR의 데스크톱 보기로 이 브라우저 창을 열어 주세요.</li><li>컨트롤러 포인터로 한글 키를 누르고 <strong>보내기</strong>를 선택하세요.</li></ol><p>PC에서 실행하는 VRChat용입니다. 별도의 VR 오버레이는 포함하지 않으며, SteamVR 등의 데스크톱 보기를 사용합니다. OSC는 수신 확인을 돌려주지 않으므로 서버 연결 표시가 게임 연결을 뜻하지는 않습니다.</p><button id="resetPhrases">저장 문장 초기화</button></details>
+</main><script type="module" src="/app.mjs"></script></body></html>

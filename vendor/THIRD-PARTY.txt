@@ -1,0 +1,5 @@
+OpenVR SDK — Valve Corporation
+https://github.com/ValveSoftware/openvr
+Pinned commit: 0924064316de3effbcd1acf1e309182a2deb1c05
+This distribution includes openvr_api.dll and compiled OpenVR C# bindings.
+License: OpenVR-LICENSE.txt

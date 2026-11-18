@@ -1,0 +1,24 @@
+# 업데이트 서명 개인키 — 절대 커밋하지 말 것
+.local-signing/
+
+# 빌드·배포 결과물 (dist/openvr_api.dll 은 vendor/README.md 참고해 따로 받기)
+dist/
+release/
+update-publish/
+booth-release/
+*.zip
+*.sha256
+*.exe
+*.dll
+
+# 로컬 검증 기록·미리보기 이미지
+validation/
+*-preview.png
+*test-results*.txt
+render-benchmark.txt
+booth-*.png
+icon-check.png
+
+# 실행 중 생기는 파일
+user-settings.json
+node_modules/
