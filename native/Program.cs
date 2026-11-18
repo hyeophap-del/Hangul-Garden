@@ -4,9 +4,9 @@ using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 
-[assembly: System.Reflection.AssemblyVersion("1.1.9.0")]
-[assembly: System.Reflection.AssemblyFileVersion("1.1.9.0")]
-[assembly: System.Reflection.AssemblyInformationalVersion("1.1.9")]
+[assembly: System.Reflection.AssemblyVersion("1.2.0.0")]
+[assembly: System.Reflection.AssemblyFileVersion("1.2.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersion("1.2")]
 [assembly: System.Reflection.AssemblyTitle("한글뜰")]
 [assembly: System.Reflection.AssemblyCompany("협합")]
 [assembly: System.Reflection.AssemblyCopyright("Copyright © 2026 협합. 무단 재배포 금지. 제3자 구성요소는 각 라이선스 적용.")]
@@ -32,7 +32,7 @@ public class ControlWindow : Form {
     readonly Label info=new Label();
     readonly System.Windows.Forms.Timer timer=new System.Windows.Forms.Timer();
     public ControlWindow(){
-        Text="한글뜰 1.1.9 · 실시간 한글 채팅";ClientSize=new Size(570,520);FormBorderStyle=FormBorderStyle.FixedSingle;MaximizeBox=false;DoubleBuffered=true;
+        Text="한글뜰 1.2 · 실시간 한글 채팅";ClientSize=new Size(570,520);FormBorderStyle=FormBorderStyle.FixedSingle;MaximizeBox=false;DoubleBuffered=true;
         Icon=AppInfo.LoadIcon();
         Font=new Font("Malgun Gothic",10);BackColor=Color.FromArgb(20,27,39);ForeColor=Color.White;
         info.SetBounds(22,20,525,95);Controls.Add(info);

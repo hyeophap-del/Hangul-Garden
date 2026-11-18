@@ -1,10 +1,10 @@
-한글뜰 1.1.9 — SteamVR 한글 채팅 키보드
+한글뜰 1.2 — SteamVR 한글 채팅 키보드
 
 [처음 실행]
 1. ZIP을 원하는 폴더에 전부 압축 해제하세요. ZIP 안에서 바로 실행하지 마세요.
 2. SteamVR과 VRChat을 실행하세요. Virtual Desktop도 SteamVR 모드로 실행하세요.
 3. VRChat 액션 메뉴에서 OSC → Enabled를 켜세요.
-4. HangeulVR-1.1.9.exe를 실행하세요.
+4. HangeulVR-1.2.exe를 실행하세요.
    이전 한글뜰이 실행 중이면 먼저 PC 제어 창을 닫으세요.
 
 Windows x64, .NET Framework 4.x, SteamVR이 필요합니다.
@@ -106,3 +106,7 @@ LocalAppData의 HangeulVR/steamvr-launcher에 실행 파일의 동일한 사본�
 
 [1.1.9 거리 유지]
 창을 잡아 이동하거나 조이스틱으로 조절한 거리를 저장합니다. 키보드를 다시 열면 현재 바라보는 방향에 저장된 거리로 나타납니다. 프로그램을 재실행해도 유지됩니다. 조이스틱 거리 조절 설정의 기본값은 계속 꺼짐입니다.
+
+[1.2 업데이트 주소 변경]
+앱 안에서 새 버전을 확인하는 주소를 실제 배포 저장소(github.com/hyeophap-del/Hangul-Garden)로 바꿨습니다.
+1.1.x에서는 새 버전 알림이 오지 않으므로 이번 1.2는 한 번 직접 내려받아 주세요. 이후 버전부터는 앱 안에서 업데이트할 수 있습니다.
