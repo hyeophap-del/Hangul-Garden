@@ -1,4 +1,4 @@
-param(
+﻿param(
     [Parameter(Mandatory=$true)][string]$Repository,
     [string]$Version='1.1',
     [string]$Notes='자동 실행 및 앱 내 업데이트 기능',
@@ -26,7 +26,7 @@ $manifest=[ordered]@{
 }
 $json=$manifest | ConvertTo-Json
 $bytes=[Text.Encoding]::UTF8.GetBytes($json)
-Add-Type -AssemblyName System.Security.Cryptography.ProtectedData
+if ($PSVersionTable.PSEdition -eq 'Core') { Add-Type -AssemblyName System.Security.Cryptography.ProtectedData } else { Add-Type -AssemblyName System.Security }
 $protectedKey=[IO.File]::ReadAllBytes((Join-Path $PWD '.local-signing/update-key.dpapi'))
 $privateBytes=[System.Security.Cryptography.ProtectedData]::Unprotect($protectedKey,$null,[System.Security.Cryptography.DataProtectionScope]::CurrentUser)
 $rsa=[System.Security.Cryptography.RSA]::Create()

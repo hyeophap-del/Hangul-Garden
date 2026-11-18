@@ -1,4 +1,4 @@
-param([string]$Version='1.1')
+﻿param([string]$Version='1.1')
 $ErrorActionPreference='Stop'
 Set-Location -LiteralPath $PSScriptRoot
 if ($Version -notmatch '^\d+(\.\d+){1,3}$') { throw 'Invalid version.' }
